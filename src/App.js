@@ -1,5 +1,4 @@
 import './App.css';
-import amazonLogo from './img/amazon-logo.png';
 import Boton from './componentes/boton';
 import Pantalla from './componentes/pantalla';
 import BotonClear from './componentes/botonClear';
@@ -10,19 +9,17 @@ function App() {
 
   const [input, setInput] = useState('');
 
-  let cont = [];
-
   const agregarInput = (val) => {
 
     setInput(input + val);
-
+    
   };
 
   const calcularResult = () => {
     
     if(input){
       
-      if((evaluate(input) % 2 == 0) || (evaluate(input) % 3 == 0) || (evaluate(input) % 5 == 0) || (evaluate(input) % 7 == 0)){
+      if((evaluate(input) % 2 === 0) || (evaluate(input) % 3 === 0) || (evaluate(input) % 5 === 0) || (evaluate(input) % 7 === 0)){
 
         setInput(Math.floor(evaluate(input)));
 
@@ -40,12 +37,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className='contenedor-amazon-logo'>
-        <img 
-          src={amazonLogo}
-          className='amazon-logo'
-          alt='Logo de Amazon' />
-      </div>
       <div className='contenedor-calculadora'>
           <Pantalla input={input} />
           <div className='fila'>

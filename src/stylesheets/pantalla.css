@@ -1,5 +1,5 @@
 .input{
-    height: 65px;
+    height: 55px;
     border-radius: 50px;
     margin-bottom: 20px;
     display: flex;
@@ -9,7 +9,5 @@
     font-weight: bold;
     background-color: #0a0a23;
     padding: 1px 20px 1px 11px;
-    margin: 1px solid #888;
-    box-sizing: -1px 4px 1px 1px white;
     color: aliceblue;
 }
